@@ -111,7 +111,10 @@ it('BACK', () => {
     // assert result
     expect(currentState.CURRENT_DRAWER.BODY_COMPONENT).to.equal(expectedState.CURRENT_DRAWER.BODY_COMPONENT)
     expect(currentState.CURRENT_DRAWER.BODY_PAYLOAD.data).to.equal(expectedState.CURRENT_DRAWER.BODY_PAYLOAD.data)
+<<<<<<< HEAD
     expect(currentState.DRAWER_STACK.length).to.equal(1);
+=======
+>>>>>>> 18aaf7af00441f3722c6dafe99d688865a8a051c
     // apply mutation
     BACK(currentState)
     expect(currentState.CURRENT_DRAWER.BODY_COMPONENT).to.equal("DrawerContentX")
