@@ -5,7 +5,7 @@
             <li v-for="drawer in DRAWER_STACK" :key="drawer.length">{{drawer.BODY_COMPONENT}}</li>
         </ul>
         <component :is="CURRENT_DRAWER.BODY_COMPONENT" :payload="CURRENT_DRAWER.BODY_PAYLOAD"></component>
-        <button @click="SWITCH_TO_DRAWER_A">a</button><button @click="SWITCH_TO_DRAWER_B">b</button><button @click="SWITCH_TO_DRAWER_C">c</button><button @click="BACK">Back</button>
+        <button @click="SWITCH_TO_DRAWER_A">a</button><button @click="SWITCH_TO_DRAWER_B">b</button><button @click="SWITCH_TO_DRAWER_C">c</button><button v-if="DRAWER_STACK.length > 0" @click="BACK">Back</button>
   </div>
 </template>
 
